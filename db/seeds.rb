@@ -47,4 +47,12 @@ end
 
 puts "9 portfolios created via seed data"
 
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Ruby #{technology}",
+  )
+end
+
+puts "3 technologies created via seed data"
+
 
